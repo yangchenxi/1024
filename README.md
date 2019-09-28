@@ -57,6 +57,9 @@ A Red-Black tree based NavigableMap implementation. The map is sorted according 
 ```java
 Arrays.fill(dp,0);
 
+
+System.out.println(Arrays.toString(arr));
+
 ```
 
 ## ArrayList:
