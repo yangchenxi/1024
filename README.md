@@ -3,7 +3,13 @@
 ## Hashmap:
 
 ```java
-Hashmap<Integer,Integer> map=new HashMap<>()
+Hashmap<Character,Integer> map=new HashMap<>()
+//HashMap tranversal:
+for (Map.Entry<Character, Integer> entry: map.entrySet()) {
+            char key = entry.getKey();
+            int val = entry.getValue();
+            System.out.println(key + " " + val);
+        }
 
 
 ```
