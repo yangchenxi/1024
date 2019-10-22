@@ -10,6 +10,12 @@ for (Map.Entry<Character, Integer> entry: map.entrySet()) {
             int val = entry.getValue();
             System.out.println(key + " " + val);
         }
+Arrays.hashCode(arr);//get the hash of an arr(unique)
+//use an array to represent hashmap:
+int[] map = new int[26];
+for (char ch: tmp.toCharArray()) {
+   map[ch - 'a']++;
+}
 
 
 ```
@@ -80,6 +86,7 @@ public static <T> T[] copyOfRange(T[] original,
                                   int to)
 
 System.out.println(Arrays.toString(arr));
+这里要注意：不能直接 arr.toString()
 
 ```
 
