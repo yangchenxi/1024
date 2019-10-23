@@ -1,5 +1,8 @@
 # java刷题常用代码数据结构以及坑
 
+import java.util.*;
+import java.lang.*;
+
 ## Hashmap:
 
 ```java
@@ -22,6 +25,17 @@ for (char ch: tmp.toCharArray()) {
 ## HashSet:
 set.add():
 Return Value: The function returns True if the element is not present in the HashSet otherwise False if the element is already present in the HashSet.
+
+```java
+System.out.println("HashSet: " + set); 
+
+set.remove(Object);
+
+for(String s:set){
+   System.out.println(s); 
+}
+
+```
 
 ## Treemap:
 
@@ -65,6 +79,25 @@ A Red-Black tree based NavigableMap implementation. The map is sorted according 
             });
 
 
+```
+
+## Queue
+
+```java
+Queue<Integer> q = new LinkedList<>(); 
+
+
+```
+add() 
+peek()
+remove()
+poll()
+size()
+
+## Stack
+
+```java
+用arraylist算了
 ```
 
 ## Array:
