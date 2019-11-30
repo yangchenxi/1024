@@ -254,6 +254,7 @@ Space: O(n)
 
 ```
 ## String/StringBuilder:
+比较两个 string 是否相等 a.equals(b) 千万不能用 ==
 
 
 ## BinaryTree:
