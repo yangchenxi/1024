@@ -1,15 +1,94 @@
 # java刷题常用代码数据结构以及坑
 
+import java.util.*;
+import java.lang.*;
+
+## ReadFile
+
+```java
+import java.io.File;
+import java.util.Scanner;
+
+public class ReadFile {
+
+    public static void main(String[] args) {
+
+        try {
+            System.out.print("Enter the file name with extension : ");
+
+            Scanner input = new Scanner(System.in);
+
+            File file = new File(input.nextLine());
+
+            input = new Scanner(file);
+
+
+            while (input.hasNextLine()) {
+                String line = input.nextLine();
+                System.out.println(line);
+            }
+            input.close();
+
+        } catch (Exception ex) {
+            ex.printStackTrace();
+        }
+    }
+
+}
+```
+
+## Scanner
+
+```java
+import java.util.Scanner;
+class GetInputFromUser
+{
+    public static void main(String args[])
+    {
+                Scanner in = new Scanner(System.in);
+        String s = in.nextLine();
+        System.out.println("You entered string "+s);
+        int a = in.nextInt();
+        System.out.println("You entered integer "+a);
+        float b = in.nextFloat();
+        System.out.println("You entered float "+b);
+    }
+
+```
+
 ## Hashmap:
 
 ```java
-Hashmap<Integer,Integer> map=new HashMap<>()
+Hashmap<Character,Integer> map=new HashMap<>()
+//HashMap tranversal:
+for (Map.Entry<Character, Integer> entry: map.entrySet()) {
+            char key = entry.getKey();
+            int val = entry.getValue();
+            System.out.println(key + " " + val);
+        }
+Arrays.hashCode(arr);//get the hash of an arr(unique)
+//use an array to represent hashmap:
+int[] map = new int[26];
+for (char ch: tmp.toCharArray()) {
+   map[ch - 'a']++;
+}
 
 
 ```
 ## HashSet:
 set.add():
 Return Value: The function returns True if the element is not present in the HashSet otherwise False if the element is already present in the HashSet.
+
+```java
+System.out.println("HashSet: " + set); 
+
+set.remove(Object);
+
+for(String s:set){
+   System.out.println(s); 
+}
+
+```
 
 ## Treemap:
 
@@ -55,6 +134,25 @@ A Red-Black tree based NavigableMap implementation. The map is sorted according 
 
 ```
 
+## Queue
+
+```java
+Queue<Integer> q = new LinkedList<>(); 
+
+
+```
+add() 
+peek()
+remove()
+poll()
+size()
+
+## Stack
+
+```java
+用arraylist算了
+```
+
 ## Array:
 
 ```java
@@ -74,6 +172,7 @@ public static <T> T[] copyOfRange(T[] original,
                                   int to)
 
 System.out.println(Arrays.toString(arr));
+这里要注意：不能直接 arr.toString()
 
 ```
 
