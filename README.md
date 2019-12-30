@@ -75,6 +75,15 @@ for (char ch: tmp.toCharArray()) {
 
 
 ```
+## Pair:
+```java
+import javafx.util.Pair; 
+Pair<String, Integer> pair = new Pair<>();
+pair.getKey();
+pair.getValue();
+
+
+```
 ## HashSet:
 set.add():
 Return Value: The function returns True if the element is not present in the HashSet otherwise False if the element is already present in the HashSet.
@@ -245,6 +254,7 @@ Space: O(n)
 
 ```
 ## String/StringBuilder:
+比较两个 string 是否相等 a.equals(b) 千万不能用 ==
 
 
 ## BinaryTree:
