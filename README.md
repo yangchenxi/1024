@@ -201,6 +201,8 @@ Collections.singletonList(Obj);//return an immutable list containing only the sp
 Collections.sort(list,(p1, p2) -> p1.firstName.compareTo(p2.firstName));
 
 ```
+Collections.sort那个一定要是一个List类，可以用Arrays.asList() 转换
+
 
 ## Union Find:
 
