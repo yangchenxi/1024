@@ -146,8 +146,9 @@ A Red-Black tree based NavigableMap implementation. The map is sorted according 
 ## Queue
 
 ```java
-Queue<Integer> q = new LinkedList<>(); 
-
+Queue<Integer> queue = new LinkedList<>(); 
+queue.add(c);
+Character c = queue.remove();
 
 ```
 add() 
@@ -159,7 +160,10 @@ size()
 ## Stack
 
 ```java
-用arraylist算了
+Stack<Integer> stack = new Stack<>();
+stack.push(-1);
+Integer i = stack.pop();
+Integer i = stack.peek();//looks at 
 ```
 
 ## Array:
