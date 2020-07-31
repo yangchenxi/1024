@@ -129,7 +129,17 @@ A Red-Black tree based NavigableMap implementation. The map is sorted according 
 
 ```
 
+## List
 
+```java
+list.addAll(Collection c)
+String a[] = new String[] { "A", "B", "C", "D" }; 
+List<String> list = Arrays.asList(a); 
+System.out.println("The list is: " + list); 
+
+String[] itemsArray = new String[list.size()];
+itemsArray = list.toArray(itemsArray);
+```
 
 ## PriorityQueue:
 
@@ -218,7 +228,6 @@ Collections.reverse(arraylist);
 Collections.binarySearch(list,key);
 Collections.singletonList(Obj);//return an immutable list containing only the specified object
 Collections.sort(list,(p1, p2) -> p1.firstName.compareTo(p2.firstName));
-
 ```
 Collections.sort那个一定要是一个List类，可以用Arrays.asList() 转换
 
