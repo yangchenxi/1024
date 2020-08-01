@@ -56,6 +56,13 @@ class GetInputFromUser
 
 ```
 
+## Random:
+
+```java
+Random random_num = new Random();
+int ran = random_num.nextInt(int bound); //[0,bound)
+```
+
 ## Hashmap:
 
 ```java
