@@ -211,7 +211,10 @@ int[][]A={
     {1,7,6,5,2},
     {8,4,9,5,5}
         };
-   
+ 
+int a = 0;
+int b = 1;
+int[] tmp = new int[]{a, b};
 
 public static <T> T[] copyOfRange(T[] original,
                                   int from,
