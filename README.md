@@ -283,6 +283,7 @@ Collections.sort那个一定要是一个List类，可以用Arrays.asList() 转�
 }
 ```
 
+
 复杂度:
 
 Find( ): O(1)
@@ -302,6 +303,8 @@ Space: O(n)
 8位leading 0
 ```java
 String formattedNumber = String.format("%08d", number);
+
+Character.isLetter(ch1)
 ```
 ## BinaryTree:
 
