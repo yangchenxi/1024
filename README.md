@@ -137,6 +137,14 @@ A Red-Black tree based NavigableMap implementation. The map is sorted according 
 
 ```
 
+## linkedHashMap
+```java
+        Map.Entry<Character, Integer> leftmost = hashmap.entrySet().iterator().next();
+        hashmap.remove(leftmost.getKey());
+        // move left pointer of the slidewindow
+        left = leftmost.getValue() + 1;
+ ```
+
 ## List
 
 ```java
